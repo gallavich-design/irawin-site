@@ -8,8 +8,7 @@ export type Project = {
   problem?: string;
   whatIBuilt?: string;
   whatILearned?: string;
-  embedUrl?: string;
-  passwordHash?: string; // SHA-256 hash of the password
+  embedUrl?: string; // Locked projects keep theirs in playground-private.ts
 };
 
 export const projects: Project[] = [
@@ -59,7 +58,6 @@ export const projects: Project[] = [
       "A Next.js app that sends copy to the Claude API with structured prompts for three distinct rewrite modes, then displays the results side-by-side for comparison.",
     whatILearned:
       "Prompt engineering for creative tasks is genuinely different from informational tasks. The system prompt needs to encode the design philosophy, not just the instruction.",
-    passwordHash: "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
   },
   {
     slug: "design-token-explorer",
